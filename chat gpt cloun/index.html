@@ -1,0 +1,117 @@
+<!-- Save this as index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatGPT Clone Layout</title>
+  <style>
+    /* Basic styling for the chat interface */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .chat-container {
+      width: 100%;
+      max-width: 400px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .chat-header {
+      background-color: #0078d7;
+      color: #ffffff;
+      padding: 15px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .chat-window {
+      flex: 1;
+      padding: 10px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background-color: #f9f9f9;
+    }
+
+    .chat-bubble {
+      padding: 10px 15px;
+      border-radius: 20px;
+      max-width: 70%;
+      font-size: 14px;
+    }
+
+    .bot-message {
+      align-self: flex-start;
+      background-color: #e1e1e1;
+    }
+
+    .user-message {
+      align-self: flex-end;
+      background-color: #0078d7;
+      color: #ffffff;
+    }
+
+    .chat-input {
+      display: flex;
+      padding: 10px;
+      border-top: 1px solid #ddd;
+      background-color: #ffffff;
+    }
+
+    .chat-input input {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    .chat-input button {
+      background-color: #0078d7;
+      color: #ffffff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 20px;
+      margin-left: 10px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .chat-input button:hover {
+      background-color: #005bb5;
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">ChatGPT Clone</div>
+    <div class="chat-window">
+      <!-- Dummy chat bubbles -->
+      <div class="chat-bubble bot-message">Hello! How can I assist you?</div>
+      <div class="chat-bubble user-message">Tell me a joke!</div>
+      <div class="chat-bubble bot-message">Why did the chicken join a band? Because it had the drumsticks!</div>
+    </div>
+    <div class="chat-input">
+      <input type="text" placeholder="Type your message..." disabled />
+      <button disabled>Send</button>
+    </div>
+  </div>
+</body>
+</html>
+ 
